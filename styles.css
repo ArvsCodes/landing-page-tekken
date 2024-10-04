@@ -91,7 +91,7 @@ li:hover {
     gap: 20px;
 }
 
-button {
+.start-content button {
     margin: 0;
     padding: 10px 28px;
     background-color: transparent;
@@ -217,26 +217,49 @@ button {
     margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .call-container {
     margin: 0;
-    padding: 0;
-    height: 260px;
+    padding: 90px 180px;
+    min-height: 300px;
     width: auto;
-    background-color: yellow;
+    display: flex;
+    gap: 40px;
+}
+
+.call-container h1 {
+    font-family: "Heading Heavy";
+    font-size: 92px;
+    margin: 0 0 12px 0;
+}
+
+.call-container p {
+    font-family: "DM Sans";
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.call-container button {
+    margin: 0;
+    background-color: transparent;
+    color: black;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.call-container button:hover {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 .footer {
@@ -248,7 +271,7 @@ button {
 
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 2400px) {
     .start-container {
         flex-direction: column;
         align-items: center;
@@ -262,7 +285,7 @@ button {
     }
 
     .top-container {
-        padding: 20px;
+        padding: 40px;
     }
 
     .header ul {
@@ -271,11 +294,11 @@ button {
     }
 
     .start-container h1 {
-        font-size: 48px;
+        font-size: 80px;
     }
 
     .start-container p {
-        font-size: 16px;
+        font-size: 24px;
         margin-bottom: 28px;
     }
 
@@ -310,5 +333,16 @@ button {
     .quote {
         font-size: 24px;
         width: 70vw;
+    }
+
+    .call-container {
+        display: flex;
+        flex-direction: column;
+        padding: 60px 60px;
+        text-align: center;
+    }
+
+    .call-container h1 {
+        font-size: 48px;
     }
 }
