@@ -279,7 +279,7 @@ li:hover {
     font-size: 24px;
 }
 
-@media only screen and (max-width: 2400px) {
+@media only screen and (max-width: 1800px) {
     .start-container {
         flex-direction: column;
         align-items: center;
@@ -365,7 +365,7 @@ li:hover {
         height: 36px;
         width: auto;
     }
-    
+
     .header ul {
         flex-direction: row;
         gap: 12px;
