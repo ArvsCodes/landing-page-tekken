@@ -263,12 +263,20 @@ li:hover {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    padding: 0;
-    height: 50px;
+    padding: 12px 0;
+    min-height: 80px;
     width: auto;
-    background-color: pink;
+    background-color: rgb(15, 15, 15);
+}
 
+.footer p {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 2400px) {
@@ -344,5 +352,9 @@ li:hover {
 
     .call-container h1 {
         font-size: 48px;
+    }
+
+    .footer {
+        padding: 0;
     }
 }
