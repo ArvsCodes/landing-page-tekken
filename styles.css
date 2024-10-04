@@ -3,6 +3,11 @@
     src: url('fonts/Heading-Pro-Wide-Heavy-trial.ttf');
 }
 
+@font-face {
+    font-family: 'Syne ExtraBold'; 
+    src: url('fonts/Syne-ExtraBold.ttf');
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -118,42 +123,6 @@ button {
     height: auto;
 }
 
-@media only screen and (max-width: 1600px) {
-    .start-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .start-image {
-        width: 100%;
-        max-width: auto;
-        height: auto;
-    }
-
-    .top-container {
-        padding: 20px;
-    }
-
-    .header ul {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .start-container h1 {
-        font-size: 48px;
-    }
-
-    .start-container p {
-        font-size: 16px;
-    }
-
-    .start-container button {
-        font-size: 20px;
-        padding: 8px 20px;
-    }
-}
-
 .dlc-container {
     display: flex;
     flex-direction: column;
@@ -217,26 +186,50 @@ button {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .quote-container {
     margin: 0;
-    padding: 0;
-    height: 260px;
+    padding: 100px 100px;
+    min-height: 400px;
     width: auto;
-    background-color: green;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.quote {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 50px;
+    font-weight: 800;
+    width: 1200px;
+    margin: 0;
+    flex: 1 1 0;
+}
+
+.quoter {
+    color: white;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .call-container {
     margin: 0;
@@ -253,4 +246,69 @@ button {
     width: auto;
     background-color: pink;
 
+}
+
+@media only screen and (max-width: 1600px) {
+    .start-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .start-image {
+        width: 100%;
+        max-width: auto;
+        height: auto;
+    }
+
+    .top-container {
+        padding: 20px;
+    }
+
+    .header ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .start-container h1 {
+        font-size: 48px;
+    }
+
+    .start-container p {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .start-content-buttons {
+        margin-bottom: 28px;
+    }
+
+    .start-container button {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    .start-content button:hover {
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    .dlc-container h1 {
+        font-size: 48px;
+    }
+
+    .dlc-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .quote-container {
+        min-height: 200px;
+    }
+
+    .quote {
+        font-size: 24px;
+        width: 70vw;
+    }
 }
